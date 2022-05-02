@@ -1,0 +1,21 @@
+<div class="shelf_div" (click)="toggle_shelf()">
+    <p id="shelf_title">{{this.shelf}}</p>
+</div>
+
+<div id="shelf" *ngIf="isShelf">
+    <h1 id="shelf_title">{{this.shelf}}</h1>
+    <button (click)="toggle_shelf()" id="return_button">Return</button>
+    <div id="clothes">
+        <app-clothes *ngFor="let clothe_ of shelf_array" clothe = {{clothe_}}></app-clothes>
+    </div>
+    <button (click)="toggleClotheForm()" id="toggle_form_button">Añadir ropa</button>
+    <button id="delete_shelf_button" (click)="delete_shelf()">Borrar balda</button>
+    <div *ngIf="is_clothe_form" id="clothe_form">
+        <p id="clothe_form_title">Add Clothe</p>
+        <input type="text" id="clothe_input">
+        <button (click)="add_clothe()" id="add_clothe_button">Add</button>
+    </div>
+    <div class="blurer" *ngIf="is_clothe_form" (click)="toggleClotheForm()"></div>
+</div>
+
+

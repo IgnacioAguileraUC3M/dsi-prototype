@@ -1,0 +1,9 @@
+<div class="option_container" (click)="toggleShow()">
+    <div *ngFor="let item of [].constructor(3);" class="option_bullet"></div>
+</div>
+<div class="blurer" *ngIf="isShown" (click)="toggleShow()"></div>
+<div class="option_panel" *ngIf="isShown">
+        <div  class="option_container panel_option" (click)="toggleShow()">
+            <div *ngFor="let item of [].constructor(3);" class="option_bullet"></div>
+        </div>
+</div>

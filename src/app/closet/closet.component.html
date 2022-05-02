@@ -1,0 +1,20 @@
+<div class="main_page">
+    <h1 class="page_title">Armario</h1>
+    <div id="shelf_form" *ngIf="is_form">
+        <p id="shelf_form_title">Nueva balda</p>
+        <div id="ng-select_div">
+            <ng-select  id="shelf_select" [(ngModel)]="selected_shelf" 
+                        style="filter: invert(80%); box-shadow: 1px 1px 10px 1px white;" 
+                        [clearable]="false" placeholder="Selecciona una balda para añadir">
+                <ng-option *ngFor="let opt of possible_shelves;" [value]="opt.viewValue">{{opt.viewValue}}</ng-option>
+            </ng-select>
+        </div>    
+        <p id="errors"></p>
+        <button id="shelf_form_button" (click)="add_shelf()">Añadir</button>
+    </div>
+    <button (click)="toggleForm()" id="add_shelf_btn">Nueva balda</button>
+    <div id="shelves">
+        <app-shelf *ngFor="let this_shelf of closet"  shelf = {{this_shelf}}></app-shelf>
+    </div>
+    <div class="blurer" *ngIf="is_form" (click)="toggleForm()"></div>
+</div>

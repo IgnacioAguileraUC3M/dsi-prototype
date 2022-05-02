@@ -1,0 +1,157 @@
+.shelf_div{
+    width: 10rem;
+    aspect-ratio: 2.5;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(44, 44, 44);
+    margin-top: 4vw;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.shelf_div:hover{
+    background-color: rgb(207, 207, 207);
+}
+
+#shelf_title{
+    color: red;
+}
+
+#shelf_title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: regular;
+    color: #333333;
+}
+
+#return_button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: regular;
+    color: #333333;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 10px 2px rgb(63, 63, 63);
+    width: 12%;
+    aspect-ratio: 2;
+    font-size: 1rem;
+}
+
+#return_button:hover{
+    background-color: rgb(206, 206, 206);
+}
+
+#toggle_form_button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: regular;
+    color: #333333;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 10px 2px rgb(63, 63, 63);
+    width: 30%;
+    aspect-ratio: 4.5;
+    font-size: 1.2rem;
+}
+
+#toggle_form_button:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+#clothe_form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: regular;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50vw;
+    height: 22vh;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px black;
+    z-index: 4;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 1rem;
+}
+
+#clothe_form_title{
+    color:#333333;
+}
+
+#clothes{
+    width: 100vw;
+    height: 60vh;
+    background-color: rgb(103, 103, 103);
+    box-shadow: inset 0px 0px 10px 3px white;
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    gap: 1rem;
+    
+}
+
+#add_clothe_button{
+    border: none;
+    background-color: rgb(160, 160, 160);
+    color: rgb(36, 36, 36);
+    box-shadow: 0px 0px 5px 1.5px black;
+}
+
+#add_clothe_button:hover{
+    background-color: rgb(122, 122, 122)
+}
+
+.blurer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.838);
+    /* display: none; */
+}
+
+#shelf{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #bebebe;
+    text-align: center;
+    /* display: hidden; */
+}
+
+#delete_shelf_button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: regular;
+    background-color: rgb(136, 30, 30);
+    color: rgb(220, 220, 220);
+    margin-left: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 10px 2px rgb(63, 63, 63);
+    width: 30%;
+    aspect-ratio: 4.5;
+    font-size: 1.2rem;
+    border: none;
+}
+
+#delete_shelf_button:hover{
+    background-color: rgb(91, 20, 20);
+}
