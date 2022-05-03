@@ -1,3 +1,29 @@
-<div class="main_page">
+<div class="main_page" id="main_page">
     <h1 class="page_title">Outfit sugerido</h1>
+    <button (click)="refresh()"></button>
+    <div id="outfit"></div>
+    <div id="errors_div"></div>
+    <div class="fit_info" id="meteorology" *ngIf="is_fit">
+        <p class="fit_info_title">Meteorologia</p>
+        <div class="separator"></div>
+        <div id="meteorology_div">
+            <p>18ºC</p>
+            <p>1%</p>
+            <p>Soleado</p>
+        </div>    
+    </div>
+    <div id="tabs_container" class=""></div>
+    <div class="fit_info" id="colors" *ngIf="is_fit">
+        <p class="fit_info_title">colores</p>
+        <div class="separator"></div>
+        <div id="colors_div">
+            <div *ngFor=" let i of [1, 2, 3]" class="color"></div>
+        </div>
+        
+    </div>
+    <div class="fit_info" id="style" *ngIf="is_fit">
+        <p class="fit_info_title">Estilo</p>
+        <div id="vert_separator"></div>
+        <p>Casual</p>
+    </div>
 </div>

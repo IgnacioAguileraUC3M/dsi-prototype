@@ -27,11 +27,11 @@
     width: 10rem;
     aspect-ratio: 4;
     justify-self: center;
-
     box-shadow: 0 0 10px rgb(44, 44, 44);
     border: none;
     border-radius: 0.2rem;
     background-color: white;
+    cursor: pointer;
 }
 #add_shelf_btn:hover{
     background-color: rgb(234, 234, 234);
@@ -88,6 +88,7 @@
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: regular;
+    cursor: pointer;
 }
 
 #shelf_form_button:hover{
