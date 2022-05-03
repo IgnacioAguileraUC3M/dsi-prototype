@@ -132,7 +132,9 @@ export class MainComponent implements OnInit {
     
       if(over_clothe == null || top_clothe ==null || pants_clothe == null){
         //no hay ropa en alguna balda
+          console.log(error_component)
         if(error_component != null){
+          console.log("No hay ropa")
           let msg = document.createTextNode("no hay ropa en alguna balda");
           error_component.appendChild(msg);
         }
@@ -141,12 +143,12 @@ export class MainComponent implements OnInit {
       return [top_clothe, over_clothe, pants_clothe]
     }
     else{
+      console.log(error_component)
       //decir que no hay baldas creadas
       if(error_component != null){
-        console.log("aaaaaaaaaaaa")
+        console.log("No hay baldas")
         let msg = document.createTextNode("No haysuficientes baldas creadas");
         error_component.append(msg);
-        console.log(error_component);
       }
     }
     return [null]
@@ -165,6 +167,10 @@ export class MainComponent implements OnInit {
     
       this.generate_pants_div(fit[2])
       this.is_fit = true;
+      let err = document.getElementById("errors_div")
+      if(err != null){
+        err.style.display = "none";
+      }
     }
     
 

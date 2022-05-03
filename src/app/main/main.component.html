@@ -1,6 +1,8 @@
 <div class="main_page" id="main_page">
     <h1 class="page_title">Outfit sugerido</h1>
-    <button (click)="refresh()"></button>
+    <button (click)="refresh()" id="refresh_button">
+        <img src="assets/reload.png" alt="reload" id="reload_img">
+    </button>
     <div id="outfit"></div>
     <div id="errors_div"></div>
     <div class="fit_info" id="meteorology" *ngIf="is_fit">
@@ -12,9 +14,9 @@
             <p>Soleado</p>
         </div>    
     </div>
-    <div id="tabs_container" class=""></div>
+    <div id="tabs_container"></div>
     <div class="fit_info" id="colors" *ngIf="is_fit">
-        <p class="fit_info_title">colores</p>
+        <p class="fit_info_title">Colores</p>
         <div class="separator"></div>
         <div id="colors_div">
             <div *ngFor=" let i of [1, 2, 3]" class="color"></div>
